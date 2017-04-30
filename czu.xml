@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recordsStudents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="czu.xsd">
+	<student>
+		<PersonalInformation>	
+			<Title position="before">Bc.</Title>
+			<Name>Jakub</Name>
+                        <MiddleName></MiddleName>
+			<Surname>Kubica</Surname>
+			<Title position="after"></Title>
+			<BirthDate format="YYYY-MM-DD">1989-01-21</BirthDate>
+			<PersonalID>8901216511</PersonalID>
+			<Sex>Male</Sex>
+			<Nationality>Czech</Nationality>
+                        <Height>192</Height>
+                        <Weight>90</Weight>
+                        <MaritalStatus>false</MaritalStatus>
+                        <NumberofChildren>2</NumberofChildren>
+		</PersonalInformation>
+		<Contactinformation>
+			<Street>Na Rozcestí</Street>
+			<Number address="descriptive">11</Number>
+			<Number address="registration">12</Number>
+			<Number address="orientative">12A</Number>
+			<City>Praha</City>
+			<PartofCity>Praha 9</PartofCity>
+			<PSC>19000</PSC>
+			<State>CZE</State>
+			<Telephone type="mobile">+420776460757</Telephone>
+			<Email priority="1">kubo.kubica@gmail.com</Email>
+			<Telephone type="landline">+421904967775</Telephone>
+			<Email priority="2">jakub.kubica@centurm.cz</Email>
+			<Fax></Fax>
+		</Contactinformation>
+		<StudentAccount>
+			<UserName>xkubic27</UserName>
+			<Created>2016-04-01</Created>
+			<Updated>2016-04-01</Updated>
+			<LastLogged>2016-04-01</LastLogged>
+			<VerifiedUser>true</VerifiedUser>
+			<BlockedUser>false</BlockedUser>
+                        <ISICnumber>5489951</ISICnumber>
+                        <LicensePlate>1A10000</LicensePlate>
+		</StudentAccount>
+		<StudentInformation>
+			<Degree>Master</Degree>
+		 	<TypeofStudy>Combined</TypeofStudy>
+			<Class>1.</Class>
+			<Faculty>PEF</Faculty>
+                        <Language>English</Language>
+			<Field>Informatics</Field>                      
+			<Grades>2.00</Grades>
+		</StudentInformation>
+	</student>
+	
+	
+	<student>
+		<PersonalInformation>
+			<Title position="before"></Title>
+			<Name>Tom</Name>
+                        <MiddleName></MiddleName>
+			<Surname>Jankovec</Surname>
+			<Title position="after"></Title>
+			<BirthDate format="YYYY-MM-DD">1986-05-09</BirthDate>
+			<PersonalID>8605099999</PersonalID>
+			<Sex>Male</Sex>
+			<Nationality>Czech</Nationality>
+                        <Height>168</Height>
+                        <Weight>87</Weight>
+                        <MaritalStatus>false</MaritalStatus>
+                        <NumberofChildren>0</NumberofChildren>
+		</PersonalInformation>
+		<Contactinformation>
+			<Street>Dlouhá</Street>
+			<Number address="descriptive">09</Number>
+			<Number address="registration">1543</Number>
+			<Number address="orientative">5B</Number>
+			<City>Praha</City>
+			<PartofCity>Praha 1</PartofCity>
+			<PSC>18000</PSC>
+			<State>CZE</State>
+			<Telephone type="mobile">+420734121859</Telephone>
+			<Email priority="1">tom.jankovec@gmail.com</Email>
+			<Telephone type="landline">+420456987123</Telephone>
+			<Email priority="2">tom.jankovec@seznam.cz</Email>
+			<Fax></Fax>
+		</Contactinformation>
+		<StudentAccount>
+			<UserName>xjanko11</UserName>
+			<Created>2016-04-01</Created>
+			<Updated>2016-04-01</Updated>
+			<LastLogged>2016-04-01</LastLogged>
+			<VerifiedUser>true</VerifiedUser>
+			<BlockedUser>false</BlockedUser>
+                        <ISICnumber>5469489</ISICnumber>
+                        <LicensePlate>1B20000</LicensePlate>
+		</StudentAccount>
+		<StudentInformation>
+			<Degree>Bachelor</Degree>
+			<TypeofStudy>Combined</TypeofStudy>
+			<Class>2.</Class>
+			<Faculty>PEF</Faculty>
+			<Field>Informatics</Field>
+			<Grades>2.13</Grades>
+		</StudentInformation>
+	</student>
+	
+	
+	
+	<student>
+		
+		<PersonalInformation>
+			<Title position="before">Ing.</Title>
+			<Name>Petr</Name>
+                        <MiddleName></MiddleName>
+			<Surname>Mracek</Surname>
+			<Title position="after">PhD.</Title>
+			<BirthDate format="YYYY-MM-DD">1983-07-07</BirthDate>
+			<PersonalID>8307076622</PersonalID>
+			<Sex>Male</Sex>
+			<Nationality>Czech</Nationality>
+                        <Height>172</Height>
+                        <Weight>70</Weight>
+                        <MaritalStatus>false</MaritalStatus>
+                        <NumberofChildren>1</NumberofChildren>
+		</PersonalInformation>
+		<Contactinformation>
+			<Street>Vyskočilova</Street>	
+			<Number address="descriptive">15</Number>
+			<Number address="registration">2567</Number>
+			<Number address="orientative">1B</Number>
+			<City>Brno</City>
+			<PartofCity>Brno - Černá pole</PartofCity>
+			<PSC>60200</PSC>
+			<State>CZE</State>
+			<Telephone type="mobile">+420734545696</Telephone>
+			<Email priority="1">petr.mracek@gmail.com</Email>
+			<Telephone type="landline">+420147987123</Telephone>
+			<Email priority="2">petr.mracek@seznam.cz</Email>
+			<Fax></Fax>
+		</Contactinformation>
+		<StudentAccount>		
+			<UserName>xmrace05</UserName>
+			<Created>2016-04-15</Created>
+			<Updated>2016-04-12</Updated>
+			<LastLogged>2016-05-01</LastLogged>
+			<VerifiedUser>true</VerifiedUser>
+			<BlockedUser>false</BlockedUser>
+                        <ISICnumber>0698674</ISICnumber>
+                        <LicensePlate>1C30000</LicensePlate>
+		</StudentAccount>
+		<StudentInformation>
+			<Degree>Doctoral</Degree>
+			<TypeofStudy>Daily</TypeofStudy>
+			<Class>1.</Class>
+			<Faculty>PEF</Faculty>
+			<Field>Informatics</Field>
+			<Grades>2.00</Grades>
+		</StudentInformation>
+	</student>
+	
+	
+	
+	<student>
+		<PersonalInformation>
+			<Title position="before"></Title>
+			<Name>Zuzana</Name>
+                        <MiddleName></MiddleName>
+			<Surname>Němcová</Surname>
+			<Title position="after"></Title>
+			<BirthDate format="YYYY-MM-DD">1989-11-09</BirthDate>
+			<PersonalID>8957075313</PersonalID>
+			<Sex>Female</Sex>
+			<Nationality>Czech</Nationality>
+                        <Height>147</Height>
+                        <Weight>90</Weight>
+                        <MaritalStatus>false</MaritalStatus>
+                        <NumberofChildren>1</NumberofChildren>
+		</PersonalInformation>
+		<Contactinformation>
+			<Street>Otakarova</Street>	
+			<Number address="descriptive">65</Number>
+			<Number address="registration">111</Number>
+			<Number address="orientative"></Number>
+			<City>Olomouc</City>
+			<PartofCity>Olomouc - Střed</PartofCity>			
+			<PSC>77900</PSC>
+			<State>CZE</State>
+			<Telephone type="mobile">+420602503111</Telephone>
+			<Email priority="1">zuzana.nemcova@gmail.com</Email>
+			<Telephone type="landline">+420456987258</Telephone>
+			<Email priority="2">zuzana.nemcova@seznam.cz</Email>
+			<Fax></Fax>
+		</Contactinformation>
+		<StudentAccount>
+			<UserName>xnemec05</UserName>
+			<Created>2016-02-14</Created>
+			<Updated>2016-03-11</Updated>
+			<LastLogged>2016-05-01</LastLogged>
+			<VerifiedUser>true</VerifiedUser>
+			<BlockedUser>false</BlockedUser>
+                        <ISICnumber>478513</ISICnumber>
+                        <LicensePlate>1D40000</LicensePlate>
+		</StudentAccount>
+		<StudentInformation>
+			<Degree>Bachelor</Degree>
+			<TypeofStudy>Daily</TypeofStudy>
+			<Class>1.</Class>
+			<Faculty>FAPPZ</Faculty>
+			<Field>Kynologie</Field>
+			<Grades>1.50</Grades>
+		</StudentInformation>
+	</student>
+	
+	
+	
+	<student>
+		<PersonalInformation>
+			<Title position="before"></Title>
+			<Name>Daniela</Name>
+                        <MiddleName></MiddleName>
+			<Surname>Vikarová</Surname>
+			<Title position="after"></Title>
+			<BirthDate format="YYYY-MM-DD">1992-12-06</BirthDate>
+			<PersonalID>9262064258</PersonalID>
+			<Sex>Female</Sex>
+			<Nationality>Czech</Nationality>
+                        <Height>178</Height>
+                        <Weight>84</Weight>
+                        <MaritalStatus>false</MaritalStatus>
+                        <NumberofChildren>1</NumberofChildren>
+		</PersonalInformation>
+		<Contactinformation>			
+			<Street>Pod Vyšehradem</Street>	
+			<Number address="descriptive">33</Number>
+			<Number address="registration">8799</Number>
+			<Number address="orientative"></Number>
+			<City>Praha</City>
+			<PartofCity>Praha 4</PartofCity>			
+			<PSC>14000</PSC>
+			<State>CZE</State>
+			<Telephone type="mobile">+420602879471</Telephone>
+			<Email priority="1">daniela.vikarova@gmail.com</Email>
+			<Telephone type="landline">+421905460789</Telephone>
+			<Email priority="2">daniela.vikarova@seznam.cz</Email>
+			<Fax></Fax>
+		</Contactinformation>
+		<StudentAccount>
+			<UserName>xvikar22</UserName>
+			<Created>2016-04-22</Created>
+			<Updated>2016-04-30</Updated>
+			<LastLogged>2016-05-05</LastLogged>
+			<VerifiedUser>true</VerifiedUser>
+			<BlockedUser>false</BlockedUser>
+                        <ISICnumber>5678456</ISICnumber>
+                        <LicensePlate>1E50000</LicensePlate>
+		</StudentAccount>
+		<StudentInformation>
+			<Degree>Bachelor</Degree>
+			<TypeofStudy>Daily</TypeofStudy>
+			<Class>3.</Class>
+			<Faculty>FLD</Faculty>
+			<Field>Wood</Field>
+			<Grades>1.20</Grades>
+		</StudentInformation>
+	</student>
+	
+	
+</recordsStudents>

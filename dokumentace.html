@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<head>
+	<title>List of Students</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.23.1" />
+	
+	<style type="text/css">
+		dt {font-weight: bold}
+		table td{border: 1px solid black; border-collapse: collapse;}
+		tr th{background: green}
+	</style>
+	
+</head>
+
+<body>
+
+	<header>
+		<h1>List of Students</h1>
+	</header>
+	<nav>
+		    <!-- Obsah s odkazy -->
+		<ul>
+			<li><a href="#intro">Intro</a></li>
+			<li><a href="#methodology">Methodology</a></li>
+			<li><a href="#elements">Description of elements and attributes</a></li>
+			<li><a href="#transformation">Transformation description</a></li>
+			<li><a href="#conclusion">Conclusion</a></li>
+		</ul>
+	</nav>
+	
+	<section id="intro">
+		<h2>Intro</h2>
+		<p>
+			The idea of this project is a demonstration of working with markup languages. As an example, the sample of a simple database of university students was chosen (specifically the CZU example). The records contain some basic information about the users who are registered in the university system. Since it is only a demonstration, the database contains only a few records and can not be expected to have a complete list of students at that time. 
+		</p>
+			The task contains these files:
+				<dl>
+					<dt>czu.xml</dt>
+					<dd>An XML document that contains the student's dataset structure.</dd>
+					
+					<dt>czu.xsd</dt>
+					<dd>XSD document with XML Schema Definition, which defines resp. Describes the structure of the previous XML document.</dd>
+					
+					<dt>czu.xslt</dt>
+					<dd>XSLT document (eXtensible Stylesheet Language Transformations), a prescription in the recommended styling language for XML documents.</dd>
+					
+					<dt>czu.html</dt>
+					<dd>The resulting HTML document after applying the above mentioned XSLT transform.</dd>
+					
+					<dt>dokumentace.html</dt>
+					<dd>Documentation for the project</dd>
+				</dl>
+		 
+	</section>
+	
+	
+	
+	<article id="methodology">
+		<!-- Metodika (použité nástroje,...)  -->
+		<h2>Methodology</h2>
+		<p>
+			Some online tools have been used to make it easier to work with markup languages. Using these tools, for example, the validated XML and HTML files were validated. The XSD generator was also used. The resulting XSD was then manually adjusted to suit your needs. For XSLT transformations, a tool was also used to convert source XML into the desired HTML format. Below is a list of used tools along with web links. 
+		</p>
+			<ul>
+				<li><a href="http://www.w3schools.com/xml/xml_validator.asp">XML Validator</a></li>
+				<li><a href="http://www.freeformatter.com/xsd-generator.html">XSD/XML Schema Generator</a></li>
+				<li><a href="http://www.freeformatter.com/xml-validator-xsd.html">XML Validator - XML Schema (XSD)</a></li>
+				<li><a href="http://www.freeformatter.com/xsl-transformer.html">XSL Transformer - XSLT</a></li>
+				<li><a href="http://validator.w3.org/">HTML Validator</a></li>
+			</ul>
+			
+	</article>
+
+	<section id="elements">
+		<!-- Popis elementů a atributů (proč, co představují)  -->
+		<h2>Description of elements and attributes</h2>
+		<p>
+			Used elements are divided into 4 logical sections"
+		</p>
+		
+			<h3>1. Personal Information</h3>
+			<p>The section where the student's basic personal information is stored</p>
+			<dl>
+				<dt>Title</dt>
+				<dd>Element in which the recorded title is included (data type STRING)</dd>
+				<dd><i>Attributes: <b>position</b></i> - Defines the position of the title - BEFORE or AFTER by name</dd>
+			
+				<dt>Name</dt>
+				<dd>Name of the student (data type STRING)</dd>
+				
+                                <dt>MiddleName</dt>
+				<dd>MiddleName of the student (data type STRING)</dd>
+                                
+				<dt>Surname</dt>
+				<dd>Surname of the student (data type STRING)</dd>
+				
+				<dt>BirthDate</dt>
+				<dd>Keeps date of birth (data type DATE)</dd>
+				<dd><i>Attributes: <b>format</b></i> - Indicates the format of the date value stored</dd>
+
+				<dt>PersonalID</dt>
+				<dd>PersonalID of the student (own data type Personal_ID)</dd>
+
+				<dt>Sex</dt>
+				<dd>Sex of the student (own data type SEX)</dd>
+
+				<dt>Nationality</dt>
+				<dd>Student nationality (data type STRING)</dd>
+                                
+                                <dt>Height</dt>
+				<dd>Height of the student(data type INTEGER)</dd>
+                                
+                                <dt>Weight</dt>
+				<dd>Weight of the student(data type INTEGER)</dd>
+                                
+                                <dt>MaritalStatus</dt>
+				<dd>Marital status of the student(data type BOOL)</dd>
+                                
+                                <dt>NumberofChildren</dt>
+				<dd>Number of children of the student(data type INTEGER)</dd>
+
+			</dl>
+
+			
+			<h3>2. Contact Information</h3>
+			<p>The sections where the contact information of the student is stored</p>
+			<dl>
+				<dt>Street</dt>
+				<dd>Student address - Street name without number (data type STRING)</dd>
+                                
+				<dt>Number</dt>
+				<dd><i>Attributes: <b>address</b></i> - Indicates the number of the house / apartment and three types are distinguished: descriptive, registration or orientative</dd>
+                                
+				<dt>City</dt>
+				<dd>Student address - Name of municipality (data type STRING)</dd>
+                                
+				<dt>PartofCity</dt>
+				<dd>Student address - Community part specifications (data type STRING)</dd>
+                                
+				<dt>PSC</dt>
+				<dd>Postcode (own PSC data type)</dd>
+                                
+				<dt>State</dt>
+				<dd>Student address - State name (data type STRING)</dd>
+                                
+				<dt>Telephone</dt>
+				<dd>Student telephone contact (data type STRING)</dd>                              
+				<dd><i>Attributes: <b>type</b></i> - Each student may have more types of phone numbers</dd>
+                                
+				<dt>Email</dt>
+				<dd>Student e-mail contact (data type STRING)</dd>
+				<dd><i>Attributes: <b>priority</b></i> - Each student can have more contact emails, and the contact priority is retained in the attribute. (1 - highest)</dd>
+                                
+                                <dt>Fax</dt>
+				<dd>Student Fax - Fax (data type INTEGER)</dd>
+			</dl>
+		
+			
+			<h3>3. Student Account</h3>
+			<p>Sections where some student account information is stored</p>
+			<dl>
+				<dt>UserName</dt>
+				<dd>Keeps user account login (data type STRING)</dd>
+                                
+				<dt>Created</dt>
+				<dd>Date when account was created (data type DATE)</dd>
+                                
+				<dt>Updated</dt>
+				<dd>Date of last change (Ddata type DATE)</dd>
+                                
+				<dt>LastLogged</dt>
+				<dd>The date the user was last logged into the system (data type DATE)</dd>
+                                
+				<dt>VerifiedUser</dt>
+				<dd>Flag if the registered user account is properly authenticated (data type BOOL)</dd>
+                                
+				<dt>BlockedUser</dt>
+				<dd>Flag if user account is blocked (data type BOOL)</dd>
+                                
+                                <dt>ISICnumber</dt>
+				<dd>ISIC number of student (data type INTEGER)</dd>
+                                
+                                <dt>LicensePlate</dt>
+				<dd>LicensePlate of student´s car for parking (data type STRING)</dd>
+                                
+			</dl>
+			
+			
+			
+			<h3>4. Student Information</h3>
+			<p>The sections where the student's study information is stored</p>
+			<dl>
+				<dt>Degree</dt>
+				<dd>Indicates the level of study the student is studying (own data type DEGREE)</dd>
+                                
+				<dt>TypeofStudy</dt>
+				<dd>Indicates the type of study (own data type TYPY_STUDY)</dd>
+                                
+				<dt>Class</dt>
+				<dd>Year in which the student is located (own data type CLASS)</dd>
+                                
+				<dt>Faculty</dt>
+				<dd>Abbreviation of the faculty to which the student is studying (own data type FACULTY)</dd>
+                                
+                                <dt>Language</dt>
+				<dd>Language in which student is studying (data type STRING)</dd>
+                                
+				<dt>Field</dt>
+				<dd>The field students are studying (data type STRING)</dd>
+                                
+				<dt>Grades</dt>
+				<dd>Student AVG grade (data type FLOAT)</dd>
+			</dl>
+	</section>
+
+
+
+	<section id="transformation">
+		<!-- Popis transformace  -->
+		<h2>Transformation description</h2>
+		<p>
+			Transformation of input XML is formatted into output HTML format. The result is a list in the form of a table that contains a listing of registered students in the system.
+			Only some essential information is listed.
+			<br/>
+			The output looks like this: 
+		</p>
+		<table border="1">
+         <tr bgcolor="white">
+            <th style="text-align:left">Full name</th>
+            <th style="text-align:left">Login</th>
+            <th style="text-align:centre">BirthDate</th>
+            <th style="text-align:centre">Email</th>
+            <th style="text-align:centre">Fakulty</th>
+            <th style="text-align:centre">Field</th>
+            <th style="text-align:centre">Typy of study</th>
+            <th style="text-align:centre">Degree</th>
+            <th style="text-align:centre">Class</th>
+            <th style="text-align:centre">Grades</th>
+         </tr>
+         <tr>
+            <td>Bc. 
+			Jakub 
+			Kubica 
+			</td>
+            <td>xkubic27</td>
+            <td>1989-01-21</td>
+            <td>kubo.kubica@gmail.com</td>
+            <td>PEF</td>
+            <td>Informatics</td>
+            <td>Combined</td>
+            <td>Master</td>
+            <td>1.</td>
+            <td>2.00</td>
+         </tr>
+         <tr>
+            <td> 
+			Tom 
+			Jankovec 
+			</td>
+            <td>xjanko11</td>
+            <td>1986-05-09</td>
+            <td>tom.jankovec@gmail.com</td>
+            <td>PEF</td>
+            <td>Informatics</td>
+            <td>Combined</td>
+            <td>Bachelor</td>
+            <td>2.</td>
+            <td>2.13</td>
+         </tr>
+         <tr>
+            <td>Ing. 
+			Petr 
+			Mracek 
+			
+, PhD.</td>
+            <td>xmrace05</td>
+            <td>1983-07-07</td>
+            <td>petr.mracek@gmail.com</td>
+            <td>PEF</td>
+            <td>Informatics</td>
+            <td>Daily</td>
+            <td>Doctoral</td>
+            <td>1.</td>
+            <td>2.00</td>
+         </tr>
+         <tr>
+            <td> 
+			Zuzana 
+			Němcová 
+			</td>
+            <td>xnemec05</td>
+            <td>1989-11-09</td>
+            <td>zuzana.nemcova@gmail.com</td>
+            <td>FAPPZ</td>
+            <td>Kynologie</td>
+            <td>Daily</td>
+            <td>Bachelor</td>
+            <td>1.</td>
+            <td>1.50</td>
+         </tr>
+         <tr>
+            <td> 
+			Daniela 
+			Vikarová 
+			</td>
+            <td>xvikar22</td>
+            <td>1992-12-06</td>
+            <td>daniela.vikarova@gmail.com</td>
+            <td>FLD</td>
+            <td>Wood</td>
+            <td>Daily</td>
+            <td>Bachelor</td>
+            <td>3.</td>
+            <td>1.20</td>
+         </tr>
+      </table>
+
+		
+	</section>
+	
+	<section id="conclusion">
+		<!-- Závěr  -->
+		<h2>Conclusion</h2>
+		<p>
+The main objective was to demonstrate the most basic functions of the different markup languages. I think I have presented my knowledge of this topic sufficiently.
+		</p>
+	</section>
+
+
+	<footer id="footer">
+		<!-- Patička (autor atd.) -->
+		<dl>
+			<dt>Author</dt>
+			<dd>Michal Menzl</dd>
+			
+			<dt>E-mail</dt>
+			<dd><a href="mailto:xmenm007@student.czu.cz">xmenm007@student.czu.cz</a></dd>
+			
+			<dt>Faculty</dt>
+			<dd>PEF</dd>
+			
+			<dt>Class</dt>
+			<dd>2.</dd>
+			
+			<dt><a href="https://github.com/Undrew27/Semestral_Work.git">GitHub</a></dt>
+                        
+			<dt>Typy of study</dt>
+			<dd>Daily</dd>
+		</dl>
+	</footer>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+     
+ 
+    
+    
+    
+    
+     
+    

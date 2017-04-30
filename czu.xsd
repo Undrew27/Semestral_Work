@@ -1,0 +1,123 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="recordsStudents">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="student" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PersonalInformation">
+                <xs:complexType>
+                  <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element name="Title">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="position" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="Name"/>
+                    <xs:element type="xs:string" name="MiddleName"/>
+                    <xs:element name="Surname">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="position" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="BirthDate">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:date">
+                            <xs:attribute type="xs:string" name="format" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:long" name="PersonalID"/>
+                    <xs:element type="xs:string" name="Sex"/>
+                    <xs:element type="xs:string" name="Nationality"/>
+                    <xs:element type="xs:short" name="Height"/>
+                    <xs:element type="xs:byte" name="Weight"/>
+                    <xs:element type="xs:string" name="MaritalStatus"/>
+                    <xs:element type="xs:byte" name="NumberofChildren"/>
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Contactinformation">
+                <xs:complexType>
+                  <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element type="xs:string" name="Street"/>
+                    <xs:element name="Number">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="address" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="City"/>
+                    <xs:element type="xs:string" name="PartofCity"/>
+                    <xs:element type="xs:int" name="PSC"/>
+                    <xs:element type="xs:string" name="State"/>
+                    <xs:element name="Telephone">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:long">
+                            <xs:attribute type="xs:string" name="type" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Email">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:byte" name="priority" use="optional"/>
+                            <xs:attribute type="xs:string" name="type" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="Fax"/>
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="StudentAccount">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="UserName"/>
+                    <xs:element type="xs:date" name="Created"/>
+                    <xs:element type="xs:date" name="Updated"/>
+                    <xs:element type="xs:date" name="LastLogged"/>
+                    <xs:element type="xs:string" name="VerifiedUser"/>
+                    <xs:element type="xs:string" name="BlockedUser"/>
+                    <xs:element type="xs:int" name="ISICnumber"/>
+                    <xs:element type="xs:string" name="LicensePlate"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="StudentInformation">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="Degree"/>
+                    <xs:element type="xs:string" name="TypeofStudy"/>
+                    <xs:element type="xs:float" name="Class"/>
+                    <xs:element type="xs:string" name="Faculty"/>
+                    <xs:element type="xs:string" name="Language" minOccurs="0"/>
+                    <xs:element type="xs:string" name="Field"/>
+                    <xs:element type="xs:float" name="Grades"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
